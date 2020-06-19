@@ -2,12 +2,12 @@
 %:
 	dh $@
 
-CONFFLAGS+=-DINSTALL_QMLDIR=/usr/lib/$(DEB_HOST_MULTIARCH)/qt/qml
+CONFFLAGS+=-DINSTALL_QMLDIR=/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/qml
 	
 override_dh_auto_configure:
 	dh_auto_configure -- $(CONFFLAGS)
 override_dh_install: 
 	dh_install --
-	mkdir debian/liri-files/usr/lib/$(DEB_HOST_MULTIARCH)
-	mkdir debian/liri-files/usr/lib/$(DEB_HOST_MULTIARCH)/qt5
-	mv debian/liri-files/usr/lib/qml debian/liri-files/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/
+#	mkdir debian/liri-files/usr/lib/$(DEB_HOST_MULTIARCH) || true
+#	mkdir debian/liri-files/usr/lib/$(DEB_HOST_MULTIARCH)/qt5 || true
+#	mv debian/liri-files/usr/lib/qml debian/liri-files/usr/lib/$(DEB_HOST_MULTIARCH)/qt5/
