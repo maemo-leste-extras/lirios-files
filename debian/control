@@ -47,6 +47,7 @@ Depends:
   qml-module-qt-labs-platform, 
   qml-module-qt-labs-settings,
   qml-module-qtquick-layouts,
+  liri-fluid,
 Description: Shared QML modules for lirios applications
 XB-Maemo-Display-Name: Lirios Filemanager
 XB-Maemo-Icon-26: iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAeAHpUWHRSYXcgcHJvZmlsZSB0eXBl
